@@ -1,30 +1,43 @@
-[![gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/c/gta6-trophy-guide-01)
-[![rank](https://make.fun/badge/gta6-trophy-guide-01/rismzz/gta6-trophy-guide-01/rank.svg)](https://make.fun/c/gta6-trophy-guide-01)
-[![reward](https://make.fun/badge/gta6-trophy-guide-01/rismzz/gta6-trophy-guide-01/reward.svg)](https://make.fun/c/gta6-trophy-guide-01)
-
 # Leonida Legend — GTA VI Trophy Guide & Tracker
 
-An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: every trophy with its official name, description and grade, a guide in our own words that names its sources, a six-stage roadmap to the platinum, flags for the 20 trophies that can be missed, and a checklist whose progress is saved in the browser and can be exported and imported again.
+[![Make.fun](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![Rank](https://make.fun/badge/gta6-trophy-guide-01/rismzz/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![Reward](https://make.fun/badge/gta6-trophy-guide-01/rismzz/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01)
 
-- **Checklist** — all 55 trophies with search, filters by kind (story, missable, collectibles, activities, online) and grade, progress counters including PSN targets (42 Shooting Range challenges, 250 stunts, 100 WAiNK locations…), and a spoiler setting that hides story trophies until they are earned.
-- **Roadmap to the platinum** — story first, then stranger strands, collectibles, activities, open-world feats, and the platinum itself.
-- **Missable trophies** — the 20 trophies tied to a single mission or moment, each with why it can be missed.
-- **Honest sourcing** — names, descriptions and grades are the official list as Exophase and PSNProfiles listed it; every guide says where its facts come from, and where a step has not been checked in the game yet, it says so. The game is not out yet, so no location or step is claimed without a source.
+An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI — built for the [gta6-trophy-guide-01 bounty on make.fun](https://make.fun/bounty/gta6-trophy-guide-01).
+
+## What it is
+
+- **Checklist of all 55 trophies** with their official names, descriptions and grades exactly as PlayStation publishes them, plus a guide in our own words for each one that cites its sources (Exophase for the official list, PSNProfiles for the PSN tracked counts).
+- **Tracker**: tick trophies off, set per-trophy counters (250 stunts, 42 Shooting Range golds, 100 WAiNK spots…), progress saved in the browser, exportable to a file and importable back.
+- **Filters** by kind (story, missable, collectibles, activities, side strands, open world — honestly, this list has no online trophies, so that filter shows 0), by grade, and by search.
+- **Spoiler setting** that hides the names and descriptions of story trophies until they are earned.
+- **Roadmap to the platinum** in six stages, built from the official descriptions, and **20 missable trophies flagged** — story missions and strand finales that may close once you pass them.
+- **Honest guides**: where a place or step is not confirmed by the official description, the guide says so instead of inventing one.
 
 ## Run it
 
-Static files, no build step, works offline:
+Static files, no build step, no network:
 
 ```sh
 node serve.ts
+# open http://localhost:8080
 ```
 
-Then open http://localhost:8080 — or open `app/index.html` directly in a browser.
+Or open `app/index.html` directly in a browser.
 
 ## Entry
 
-Built for the [gta6-trophy-guide-01](https://make.fun/c/gta6-trophy-guide-01) bounty on make.fun. `main.ts` copies `app/` and `screenshots/` to `/output` and writes `dossier.json` with the vendored make.fun library.
+`main.ts` (Node 22, standard library only) copies `app/` and `screenshots/` to `/output` and writes `/output/dossier.json`:
+
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+## Note
+
+Unofficial fan guide, not affiliated with Rockstar Games. No Rockstar logo, artwork or game imagery is used.
 
 ---
 
-Made with make.fun — [try it yourself](https://make.fun/r/aa4mcy45?ref=aa4mcy45)
+Built for [make.fun](https://make.fun/?ref=aa4mcy45)
