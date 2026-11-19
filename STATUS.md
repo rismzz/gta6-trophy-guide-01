@@ -7,7 +7,7 @@
 Round 1 (commit c6206c8) sudah selesai dibangun, TETAPI seal recording-nya GAGAL karena sebuah file sesi agen lain berubah saat recording berjalan. Entri ini dibangun ULANG dari nol di dalam recording baru, tanpa membuka/membaca file round 1 mana pun: semua file entri ditulis fresh di sesi ini, dengan kata-kata dan struktur sendiri. Nama/deskripsi/grade resmi 55 trofi diambil hanya dari file starter kit (`starter/app/data/trophies.json`).
 
 - Recording (baru, sealed): `01a1f3a4-7e37-74eb-a0b4-613b29432dc1`
-- Commit kode final: `TBD` (diisi setelah commit; commit STATUS.md menyusul di atasnya)
+- Commit kode final: `8cf4b6215ff6f6a6745cc7722f42a581c73113f0` (commit STATUS.md ini menyusul di atasnya)
 - Repo: https://github.com/rismzz/gta6-trophy-guide-01.git (branch master, di atas commit round 1; history tidak di-rewrite; BELUM di-push — parent yang push setelah seal)
 
 ## Yang dibangun — "Leonida Legend"
