@@ -34,7 +34,7 @@ Recording id: 01a1f39a-248e-735e-afc0-37a983bfa62b.
 
 ## Commit final
 
-Commit SHA final: (diisi setelah commit — lihat `git log`).
+Commit SHA final: 45ea84837696c06208ee17f48158210e80f43db5 (commit entri; commit follow-up ini hanya mengisi SHA tersebut di STATUS.md).
 
 **SIAP SUBMIT — menunggu agen utama.**
 
